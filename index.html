@@ -43,7 +43,7 @@
         </li>
 
         <li class="nav-item" role="presentation">
-          <a class="nav-link" 
+          <a class="nav-link active" 
           id="pills-productos-tab" 
           data-bs-toggle="pill" 
           data-bs-target="#pills-productos" 
@@ -54,7 +54,7 @@
         </li>
 
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" 
+          <a class="nav-link" 
           id="pills-carrito-tab" 
           data-bs-toggle="pill" 
           data-bs-target="#pills-carrito" 
@@ -87,15 +87,24 @@
 
         <!-- PRODUCTOS -->
 
-        <div class="tab-pane fade container" id="pills-productos" role="tabpanel" aria-labelledby="pills-productos-tab">
+        <div class="tab-pane fade container show active" id="pills-productos" role="tabpanel" aria-labelledby="pills-productos-tab">
 
-          <h2 class="text-center py-5">
+          
+          <h2 class="text-center pt-5 pb-4">
             Productos
           </h2>
-
+          <div class="pb-5 d-flex align-items-center">
+            <h5 class="mx-3">Categoría:</h5>
+            <a href="#" class="category-item" category="all"><button class="btn btn-success mx-3">Todo</button></a>
+            <a href="#" class="category-item" category="boys"><button class="btn btn-primary mx-3">Niños</button></a>
+            <a href="#" class="category-item" category="girls"><button class="btn btn-danger mx-3">Niñas</button></a>
+          </div>
+            
+          
+          
           <div class="row">
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="boys">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Musculosa Marinera</h5>
                 <img src="img/1.png" class="card-img bg-light" alt="...">
@@ -109,7 +118,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="m">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Musculosa con volados</h5>
                 <img src="img/2.png" class="card-img bg-light" alt="...">
@@ -123,7 +132,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="m">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Body gatito</h5>
                 <img src="img/3.png" class="card-img bg-light" alt="...">
@@ -137,7 +146,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="h">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Remera verano</h5>
                 <img src="img/4.png" class="card-img bg-light" alt="...">
@@ -151,7 +160,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="h">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Body autitos</h5>
                 <img src="img/5.png" class="card-img bg-light" alt="...">
@@ -165,7 +174,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="m">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Conjunto de plush</h5>
                 <img src="img/6.png" class="card-img bg-light" alt="...">
@@ -179,7 +188,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="h m">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Jean azul</h5>
                 <img src="img/7.png" class="card-img bg-light" alt="...">
@@ -193,7 +202,7 @@
               </div>
             </div>
 
-            <div class="col d-flex justify-content-center mb-4">
+            <div class="col d-flex justify-content-center mb-4" category="m">
               <div class="card shadow mb-2 bg-dark text-light" style="width: 18rem;">
                 <h5 class="card-title p-2 text-center">Biker estrellas</h5>
                 <img src="img/8.png" class="card-img bg-light" alt="...">
@@ -211,12 +220,12 @@
 
         </div>
       
-      </section>
+      
 
 
         <!-- CARRO -->
 
-        <div class="tab-pane fade container show active carrito" id="pills-carrito" role="tabpanel" aria-labelledby="pills-carrito-tab">
+        <div class="tab-pane fade container carrito pb-5" id="pills-carrito" role="tabpanel" aria-labelledby="pills-carrito-tab">
 
           <h2 class="text-center py-5">
             Carro
@@ -279,25 +288,15 @@
 
       </div>
 
-
-      <footer class="bg-dark p-3 mt-5 fixed-bottom">
-        <p class="text-center m-0 text-muted">B</p>
-      </footer>
-
-    
-
-  
-
-
-  <!-- ITEMS CONTAINER -->
-
-  <section id="item-container">
-
-
-
   </section>
 
+  <section id="footer" class="mt-5">
 
+    <footer class="bg-dark p-3 fixed-bottom">
+      <p class="text-center m-0 text-muted">Mini Ecommerce</p>
+    </footer>
+
+  </section>
   
 
   <!-- Jquery -->

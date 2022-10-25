@@ -1,7 +1,7 @@
 const clickButton = document.querySelectorAll(".button");
-let cart = [];
-
 const tableBody = document.querySelector(".table-body");
+//const filterButton = document.querySelectorAll(".category-item");
+let cart = [];
 
 
 
@@ -173,3 +173,27 @@ window.onload = function() {
         renderCart();
     }
 }
+
+
+/*  FILTRO EN DESARROYO
+
+filterButton.addEventListener("click", filterItems);
+
+function filterItems(value) {
+    let items = document.querySelectorAll(".card");
+
+    items.forEach((element) => {
+        if (value == "all") {
+            element.classList.remove("d-none")
+        }
+        else {
+            if (element.classList.contains(value)) {
+                element.classList.remove("d-none");
+            }
+            else {
+                element.classList.add("d-none");
+            }
+        }
+    });
+}
+*/
